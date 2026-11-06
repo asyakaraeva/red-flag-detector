@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Flag Detector 🚩</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <div id="welcome-screen">
+      <h1>🚩 Red Flag Detector</h1>
+      <p>Are they a red flag or a green flag?</p>
+      <p>Let's find out how questionable their habits are!</p>
+      <input
+        type="text"
+        id="player-name"
+        placeholder="Enter your name"
+        maxlength="20"
+        >
+      <button id="start-btn">Start Quiz 💘</button>
+      <button id="leaderboard-btn">🏆 View Leaderboard</button>
+    </div>
+    
+    <div id="quiz-screen" class="hidden">
+        <div class="progress-info">
+            <p id="progress"></p>
+            <span id="progress-percent">0%</span>
+        </div>
+
+        <div class="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="question"></h2>
+
+        <div id="answers"></div>
+
+    </div>
+
+
+    <div id="result-screen" class="hidden">
+      <h1>Your Flag Report 🚩</h1>
+      <h2 id="verdict"></h2>
+      <p id="score"></p>
+      <p id="compatibility"></p>
+      <button id="restart-btn">Try Again 🔄</button>
+      <button id="result-leaderboard-btn">
+        🏆 View Leaderboard
+        </button>
+    </div>
+
+    <div id="leaderboard-screen" class="hidden">
+        <h1>🏆 Hack Night Leaderboard</h1>
+        <p>Who has the most Green Flag Energy?</p>
+
+        <div id="leaderboard-list"></div>
+
+        <button id="leaderboard-back">
+            Back to Home 🏠
+        </button>
+    </div>
+
+  </main>
+</body>
+</html>

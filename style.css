@@ -1,0 +1,141 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ffd6e0, #ff8fab);
+  color: #74233c;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 30px #a83a5b33;
+}
+
+h1 {
+  color: #e63965;
+  font-size: 32px;
+}
+
+button {
+  background: #ff4d79;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 8px;
+}
+
+button:hover {
+  background: #d63360;
+  transform: scale(1.03);
+}
+
+#answers {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Progress bar section */
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #e63965;
+}
+
+.progress-container {
+  width: 100%;
+  height: 14px;
+  background-color: #ffe0e9;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+#progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #ff8fab,
+    #ff4d79,
+    #e63965
+  );
+  border-radius: 20px;
+  transition: width 0.5s ease-in-out;
+}
+
+#progress-percent {
+  font-size: 14px;
+  font-weight: bold;
+  color: #e63965;
+}
+
+/* Player name input */
+
+#player-name {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 2px solid #ff8fab;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+}
+
+#player-name:focus {
+  border-color: #e63965;
+}
+
+/* Leaderboard */
+
+.leaderboard-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe0e9;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.leaderboard-row:nth-child(1) {
+  background: #fff0b3;
+}
+
+.leaderboard-row:nth-child(2) {
+  background: #e8e8e8;
+}
+
+.leaderboard-row:nth-child(3) {
+  background: #f5d6b3;
+}
+
+#leaderboard-list {
+  margin: 20px 0;
+}
